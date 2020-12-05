@@ -1,0 +1,1 @@
+export type arrayIndex = number;

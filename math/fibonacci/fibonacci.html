@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<meta>
+	</meta>
+
+	<body>
+		<p>f(1)=1</p>
+		<p>f(2)=1</p>
+		<p>f(n+2)=f(n)+f(n+1)</p>
+
+		<input type="number" id="pos" />
+		<button id="trigger">Calculate</button>
+
+		<p id="target"></p>
+
+		<script src="./mymath.js">
+		</script>
+		<script type="text/javascript">
+			document.getElementById("trigger").onclick = function() {
+				try {
+					let pos = parseInt(document.getElementById("pos").value);
+
+					console.log(pos);
+
+					document.getElementById("target").innerHTML = fibonacci(pos);
+				} catch (e) {
+					console.log(e);
+				}
+			}
+		</script>
+	</body>
+</html>
