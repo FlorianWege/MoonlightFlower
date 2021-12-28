@@ -1,6 +1,6 @@
 import { Box } from '@material-ui/core';
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { Routes, useNavigate } from 'react-router-dom';
 import CaesarComponent from './caesar/CaesarComponent';
 import MazeComponent from './maze/MazeComponent';
 import RomanComponent from './roman/RomanComponent';
@@ -16,11 +16,11 @@ interface NavOptionProps {
 }
 
 const NavOption = (props: NavOptionProps) => {
-	const history = useHistory();
+	const navigate = useNavigate();
 	return (
 		<button
 			onClick={() => {
-				history.push(props.path);
+				navigate(props.path);
 			}}
 		>
 			{props.path}
@@ -67,7 +67,7 @@ export const ROUTES: Route[] = [
 		component: NAFComponent,
 	},
 	{
-		name: 'Non-adjacent form',
+		name: 'Non-adjacent-form',
 		component: CryptoNAFComponent,
 	},
 ];

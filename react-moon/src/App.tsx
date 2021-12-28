@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import { Route } from 'react-router';
+import { Route, Routes } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import NavBar, { ROUTES } from './NavBar';
-import { MuiThemeProvider, createMuiTheme, Box } from '@material-ui/core';
+import { MuiThemeProvider, createTheme, Box } from '@material-ui/core';
 import { Provider } from 'react-redux';
 import store from './store';
 
-const theme = createMuiTheme();
+const theme = createTheme();
 
 function App() {
 	return (
@@ -17,14 +17,12 @@ function App() {
 					<BrowserRouter>
 						<Box display="flex" flexDirection="column" flexWrap="nowrap">
 							<NavBar />
-							{ROUTES.map((route) => {
-								const Component = route.component;
-								return (
-									<Route key={route.name} path={'/' + route.name}>
-										<Component />
-									</Route>
-								);
-							})}
+							<Routes>
+								{ROUTES.map((route) => {
+									const Component = route.component;
+									return <Route key={route.name} path={'/' + route.name} element={<Component />} />;
+								})}
+							</Routes>
 						</Box>
 					</BrowserRouter>
 				</MuiThemeProvider>

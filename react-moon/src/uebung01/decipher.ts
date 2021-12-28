@@ -9,7 +9,7 @@ kipi
 Gdoon wdkö lyg
 Lyg rls köpdaö kökösßröp ölsköjnkös enoouö zlp Ölöp
 fiygös rdyfös isa ad lwu zlp diqköqdooös adww lyg üöpköwwös
-gdrö Ölöp ji fdiqös 
+gdrö Ölöp ji fdiqös
 Lyg slyfö kögö ls alö Fßygö isa fnzzö zlu jeöl Ölöps
 jipßyf
 Ülöoös olörös Adsf wdku adw Fcskipi isa wuöyfu alö
@@ -21,17 +21,17 @@ Rdoa adpdiq folsköou öw elöaöp Wnqnpu pölmö lyg alö Ußp diq
 aöss lyg wuögö lzzöp snyg adglsuöp
 Ng wdku adw Fcskipi ßröppdwygu Adw klsk dröp
 wygsöoo Cg  Köpdaö lwu zlp diqköqdooös adww lyg diyg snyg
-föls Wdoj gdrö 
+föls Wdoj gdrö
 Lyg slyfö kögö ls alö Fßygö isa fnzzö zlu ölsöz Wdoj
 wupöiöp elöaöp
 Ülöoös Adsf Eöss Wlö ülöooölygu snyg öls eöslk Zloyg
-isa Zögo gcuuös 
+isa Zögo gcuuös
 Lyg slyfö isa kögö ls alö Fßygö Adw Fcskipi slzzu
 dooöw röadsfu wlyg isa kögu Jeöl Zlsiuös wvcuöp folsköou öw
 elöaöp Lyg tqqsö isa gdouö aöz Fcskipi Vqdssö isa To gls
 Adsfö wdku adw Fcskipi kiu zluköadygu Eöss Wlö
 ülöooölygu snyg ölsös Wygsööröwös gcuuös naöp öls Pßgp
-köpcu 
+köpcu
 Lyg slyfö isa kögö onw
 Isa ülöooölygu ölsö Wygßwwöo jiz Zlbös piqu zlp adw
 Fcskipi glsuöpgöp
@@ -41,14 +41,14 @@ Lyg slyfö isa körö aös Eök qpöl
 Koölyg pöyguw wdkö lyg
 Adw Fcskipi kögu ls alö Fßygö isa lyg qnokö lgz Öw wuöoou
 wlyg wn isköwyglyfu ds adww lyg alö Vqdssö ßröpsögzö
-Eöss Wlö ülöooölygu snyg öuedw jiz Qßooös gcuuös 
+Eöss Wlö ülöooölygu snyg öuedw jiz Qßooös gcuuös
 wdku adw Fcskipi Risuöw Közßwö naöp kdp Gdyfqoölwyg
 Gdyfqoölwyg zßwwuö lyg öpwu fdiqös wdkö lyg
 Föls Vpnroöz Lyg gdr Jölu wdku adw Fcskipi Öw lwu ög
 röwwöp eöss aöp Uölk snyg öuedw Oiqu röfnzzu
 Lyg sögzö aös Wygoßwwöo ünz Gdfös
 Dröp slygu ji Olao piqu zlp adw Fcskipi glsuöpgöp
-Alö Dpröluwröalskiskös ad wlsa isuöp 
+Alö Dpröluwröalskiskös ad wlsa isuöp
 Lyg kögö down jiz Zöujköp isa fdiqö Gdyfqoölwyg Dow lyg
 elöaöp lsw Gdiw fnzzö rököksöu zlp alö Sdygrdpls üns
 isuös
@@ -66,20 +66,18 @@ Gz Diwupdolös wdks Wö Fdss nyg wöls Drd öädo engöp
 Alöwöp Lwodz zdygu zlp äöaösqdoow ädsj sdpütw`;
 
 function count(cipherText: string): Map<string, number> {
-    const chars = cipherText.split('');
-    const ret: Map<string, number> = new Map();
+	const chars = cipherText.split('');
+	const ret: Map<string, number> = new Map();
 
-    chars.forEach(char => {
-        ret.set(char, (ret.get(char) ?? 0) + 1);
-    });
+	chars.forEach((char) => {
+		ret.set(char, (ret.get(char) ?? 0) + 1);
+	});
 
-    return ret;
-};
+	return ret;
+}
 
 console.log(count(cipherText));
 
-function exec() {
-
-}
+function exec() {}
 
 export default exec;

@@ -1,11 +1,9 @@
-import { createStore, applyMiddleware, AnyAction, Store } from "redux";
-import thunk, { ThunkDispatch } from "redux-thunk";
+import { createStore, applyMiddleware, AnyAction, Store } from 'redux';
+import thunk, { ThunkDispatch } from 'redux-thunk';
 
 const middleware = applyMiddleware(thunk);
 
-const rootReducer = () => {
-
-};
+const rootReducer = () => {};
 
 export type TAppState = ReturnType<typeof rootReducer>;
 export type TDispatch = ThunkDispatch<TAppState, void, AnyAction>;
@@ -14,8 +12,6 @@ export type TGetState = () => TAppState;
 
 const store: TStore = createStore(rootReducer, middleware);
 
-export type State = {
-
-}
+export type State = {};
 
 export default store;
