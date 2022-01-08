@@ -80,9 +80,9 @@ export const ROUTES: Route[] = [
 const NavBar = () => {
 	return (
 		<Box display="flex" flexDirection="column" bgcolor="white">
-			<NavOption path="/" />
+			<NavOption path={process.env.PUBLIC_URL + '/'} />
 			{ROUTES.map((route) => (
-				<NavOption key={route.name} path={'/' + route.name} />
+				<NavOption key={route.name} path={process.env.PUBLIC_URL + '/' + route.name} />
 			))}
 		</Box>
 	);
