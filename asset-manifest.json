@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/MoonlightFlower/static/css/main.c98ba321.chunk.css",
+    "main.js": "/MoonlightFlower/static/js/main.629b2a68.chunk.js",
+    "main.js.map": "/MoonlightFlower/static/js/main.629b2a68.chunk.js.map",
+    "runtime-main.js": "/MoonlightFlower/static/js/runtime-main.ad848f26.js",
+    "runtime-main.js.map": "/MoonlightFlower/static/js/runtime-main.ad848f26.js.map",
+    "static/css/2.eb6e5fd9.chunk.css": "/MoonlightFlower/static/css/2.eb6e5fd9.chunk.css",
+    "static/js/2.622e7b8e.chunk.js": "/MoonlightFlower/static/js/2.622e7b8e.chunk.js",
+    "static/js/2.622e7b8e.chunk.js.map": "/MoonlightFlower/static/js/2.622e7b8e.chunk.js.map",
+    "index.html": "/MoonlightFlower/index.html",
+    "static/css/2.eb6e5fd9.chunk.css.map": "/MoonlightFlower/static/css/2.eb6e5fd9.chunk.css.map",
+    "static/css/main.c98ba321.chunk.css.map": "/MoonlightFlower/static/css/main.c98ba321.chunk.css.map",
+    "static/js/2.622e7b8e.chunk.js.LICENSE.txt": "/MoonlightFlower/static/js/2.622e7b8e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ad848f26.js",
+    "static/css/2.eb6e5fd9.chunk.css",
+    "static/js/2.622e7b8e.chunk.js",
+    "static/css/main.c98ba321.chunk.css",
+    "static/js/main.629b2a68.chunk.js"
+  ]
+}
