@@ -1,4 +1,4 @@
-import { Box, Grid, makeStyles, TextField, Typography } from '@material-ui/core';
+import { Box, Grid, makeStyles, TextField, Typography } from '@mui/material';
 import React, { ChangeEvent, useCallback, useState } from 'react';
 
 interface Temperature {
@@ -57,29 +57,9 @@ const TemperatureComponent = () => {
 		setKelvin(fahrenheitToKelvin(fahrenheit));
 	}, []);
 
-	const text =
-		'dase<b>w</b>qerwqrqwrqwerewrewrewdasewqerwqrqwrqwerewrewrewdasewqerwqrqwrqwerewrewrewdasewqerwqrqwrqwerewrewrewdasewqerwqrqwrqwerewrewrewdasewqerwqrqwrqwerewrewrewdasewqerwqrqwrqwerewrewrewdasewqerwqrqwrqwerewrewrewdasewqerwqrqwrqwerewrewrewdasewqerwqrqwrqwerewrewrewdasewqerwqrqwrqwerewrewrewdasewqerwqrqwrqwerewrewrewdasewqerwqrqwrqwerewrewrewdasewqerwqrqwrqwerewrewrewdasewqerwqrqwrqwerewrewrew';
-
-	const styles = makeStyles({
-		input: {
-			textOverflow: 'ellipsis',
-		},
-	})();
-
 	return (
 		<>
 			<A num={4} />
-			<Box width="200px" height="300px" bgcolor="red">
-				<TextField
-					value={text}
-					fullWidth
-					InputProps={{
-						classes: {
-							input: styles.input,
-						},
-					}}
-				/>
-			</Box>
 			<Grid container direction="column" wrap="nowrap">
 				<Grid item xs={12}>
 					<Typography>K</Typography>

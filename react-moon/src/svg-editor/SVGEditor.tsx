@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import AttributeList, { Attributes } from './AttributeList';
-import { Typography, Box } from '@material-ui/core';
+import { Typography, Box } from '@mui/material';
 import SVGPanel from './SVGPanel';
 import SVGTreeView, { Node } from './SVGTreeView';
 

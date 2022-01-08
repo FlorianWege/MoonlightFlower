@@ -1,4 +1,4 @@
-import { TextField } from '@material-ui/core';
+import { TextField } from '@mui/material';
 import React, { useState, ChangeEvent, useCallback } from 'react';
 
 const encrypt = (alphabet: string, plainText: string, key: string) => {

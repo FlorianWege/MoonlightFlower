@@ -1,4 +1,4 @@
-import { Box } from '@material-ui/core';
+import { Box, Button } from '@mui/material';
 import React from 'react';
 import { Routes, useNavigate } from 'react-router-dom';
 import CaesarComponent from './caesar/CaesarComponent';
@@ -18,13 +18,13 @@ interface NavOptionProps {
 const NavOption = (props: NavOptionProps) => {
 	const navigate = useNavigate();
 	return (
-		<button
+		<Button
 			onClick={() => {
 				navigate(props.path);
 			}}
 		>
 			{props.path}
-		</button>
+		</Button>
 	);
 };
 
@@ -70,11 +70,15 @@ export const ROUTES: Route[] = [
 		name: 'Non-adjacent-form',
 		component: CryptoNAFComponent,
 	},
+	{
+		name: 'Exponentiation',
+		component: ExponentiationComponent,
+	},
 ];
 
 const NavBar = () => {
 	return (
-		<Box display="flex" flexDirection="row">
+		<Box display="flex" flexDirection="column" bgcolor="white">
 			<NavOption path="/" />
 			{ROUTES.map((route) => (
 				<NavOption key={route.name} path={'/' + route.name} />

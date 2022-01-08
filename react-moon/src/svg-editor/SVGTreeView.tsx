@@ -1,8 +1,8 @@
 import React from 'react';
-import { TreeView, TreeItem } from '@material-ui/lab';
+import { TreeView, TreeItem } from '@mui/lab';
 import { Attributes } from './AttributeList';
-import { Box, Toolbar, IconButton, Menu, MenuItem } from '@material-ui/core';
-import { ArrowUpward, ArrowDownward, DeleteForever } from '@material-ui/icons';
+import { Box, Toolbar, IconButton, Menu, MenuItem } from '@mui/material';
+import { ArrowUpward, ArrowDownward, DeleteForever } from '@mui/icons-material';
 
 export interface Node {
 	id: string;

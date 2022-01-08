@@ -1,4 +1,4 @@
-import { Box, TextField } from '@material-ui/core';
+import { Box, TextField } from '@mui/material';
 import React, { useState, ChangeEvent, useCallback } from 'react';
 
 const rotate = (alphabet: string, input: string, amount: number) => {

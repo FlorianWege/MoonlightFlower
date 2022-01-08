@@ -1,5 +1,5 @@
-import { Button, Typography } from '@material-ui/core';
-import Box from '@material-ui/core/Box';
+import { Button, Typography } from '@mui/material';
+import Box from '@mui/material/Box';
 import React, { useMemo, useState } from 'react';
 
 type Tile = {

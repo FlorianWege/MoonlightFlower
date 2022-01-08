@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Grid, TextField } from '@material-ui/core';
+import { Box, Typography, Grid, TextField } from '@mui/material';
 
 export type Attributes = { [P in keyof React.SVGProps<SVGRectElement>]: React.SVGProps<SVGRectElement>[P] };
 
