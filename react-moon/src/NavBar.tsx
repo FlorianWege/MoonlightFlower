@@ -21,7 +21,7 @@ const NavOption = (props: NavOptionProps) => {
 	return (
 		<Button
 			onClick={() => {
-				navigate(process.env.PUBLIC_URL + props.path);
+				navigate(props.path);
 			}}
 		>
 			{props.path}

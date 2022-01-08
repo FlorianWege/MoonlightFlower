@@ -14,7 +14,7 @@ function App() {
 		<>
 			<Provider store={store}>
 				<ThemeProvider theme={theme}>
-					<BrowserRouter>
+					<BrowserRouter basename={process.env.PUBLIC_URL}>
 						<Box display="flex" flexDirection="row" flexWrap="nowrap">
 							<Box width="10%">
 								<NavBar />
@@ -23,13 +23,7 @@ function App() {
 								<Routes>
 									{ROUTES.map((route) => {
 										const Component = route.component;
-										return (
-											<Route
-												key={route.name}
-												path={process.env.PUBLIC_URL + '/' + route.name}
-												element={<Component />}
-											/>
-										);
+										return <Route key={route.name} path={'/' + route.name} element={<Component />} />;
 									})}
 								</Routes>
 							</Box>
