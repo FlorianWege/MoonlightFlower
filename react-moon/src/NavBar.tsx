@@ -10,6 +10,7 @@ import TemperatureComponent from './temperature/TemperatureComponent';
 import VigenereComponent from './vigenere/VigenereComponent';
 import NAFComponent from './graph/NAFComponent';
 import { NAFComponent as CryptoNAFComponent } from './math/NAFComponent';
+import ExponentiationComponent from './math/exponentiation/ExponentiationComponent';
 
 interface NavOptionProps {
 	path: string;
