@@ -21,7 +21,7 @@ const NavOption = (props: NavOptionProps) => {
 	return (
 		<Button
 			onClick={() => {
-				navigate(props.path);
+				navigate(process.env.PUBLIC_URL + props.path);
 			}}
 		>
 			{props.path}
@@ -80,9 +80,9 @@ export const ROUTES: Route[] = [
 const NavBar = () => {
 	return (
 		<Box display="flex" flexDirection="column" bgcolor="white">
-			<NavOption path={process.env.PUBLIC_URL + '/'} />
+			<NavOption path="/" />
 			{ROUTES.map((route) => (
-				<NavOption key={route.name} path={process.env.PUBLIC_URL + '/' + route.name} />
+				<NavOption key={route.name} path={'/' + route.name} />
 			))}
 		</Box>
 	);

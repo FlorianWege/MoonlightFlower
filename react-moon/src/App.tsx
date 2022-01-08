@@ -23,7 +23,13 @@ function App() {
 								<Routes>
 									{ROUTES.map((route) => {
 										const Component = route.component;
-										return <Route key={route.name} path={'/' + route.name} element={<Component />} />;
+										return (
+											<Route
+												key={route.name}
+												path={process.env.PUBLIC_URL + '/' + route.name}
+												element={<Component />}
+											/>
+										);
 									})}
 								</Routes>
 							</Box>
